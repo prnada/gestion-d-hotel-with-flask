@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./image/building-gecf9a2a8e_1280.jpg);
+    font-family: sans-serif;
+
+}
+
+form {
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+form input[type="text"] {
+
+    background-color: none;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 14px;
+    width: 200px;
+    outline: none;
+    color: black;
+    transition: 0.24s;
+    font-size: 20px;
+}
+
+form h3 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 50px;
+
+}
+
+form input[type="text"]:focus {
+    width: 300px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-width: 3px;
+}
+
+
+
+form input[type="valider"] {
+    background: solid;
+    border: 2px solid white;
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+
+    outline: none;
+    color: white;
+    transition: 0.24s;
+    border-radius: 24px;
+    border-color: white;
+    font-size: 20px;
+}
+
+form input[type="valider"]:hover {
+    background: black;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1f1616;
+    color: #000000;
+    border-radius: 4px;
+    border: black;
+    cursor: pointer;
+}

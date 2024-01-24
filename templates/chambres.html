@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>chambre </title>
+  <meta charset="utf-8 " />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <img src="" class="logo" alt="">
+      <ul>
+        <li class="active">
+        <li><a href="/accueil">Acceuil</a> </li>
+        <li><a href="#Calendrier">Calendrier</a> </li>
+        <li><a href="/commentaires">Avis</a> </li><!--afficher les avis-->
+        <li><a href="/avis">add Avis</a> </li><!--ajouter avis-->
+        <li><a href="/reservation">LIste</a> </li><!--ajouter avis-->
+        <li><a href="/chambres">Chambres </a> </li>
+        <li><a href="/deconnexion">Déconnecter </a> </li>
+
+
+      </ul>
+    </nav>
+    <section class="chambre" id="chambres">
+      <h1 class="heading">Nos <span>chambres</span></h1>
+      <div class="row">
+        {% for chambre in chambres %}
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../static/image/{{ chambre[6] }}" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">{{ chambre[2] }}</h5>
+              <p class="card-text">{{ chambre[5] }}</p>
+              <a href="/enregistrer?chambre_id={{ chambre[0] }}" class="btn btn-primary">Réserver</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+  </div>
+</body>
+
+</html>

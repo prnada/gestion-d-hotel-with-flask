@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Site Web</title>
+    <link rel="stylesheet" type="text/css" href="../static/style6.css">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="" class="logo" alt="">
+        <ul>
+            <li class="active"><a href="/accueil">Accueil</a></li>
+            <li><a href="#Calendrier">Calendrier</a></li>
+            <li><a href="/commentaires">Avis</a></li><!--afficher les avis-->
+            <li><a href="/avis">Ajouter Avis</a></li><!--ajouter avis-->
+            <li><a href="/reservation">Liste des réservations</a></li><!--liste des reservations-->
+            <li><a href="/chambres">Chambres</a></li>
+            <li><a href="/deconnexion">Déconnexion</a></li>
+        </ul>
+    </nav>
+    <div class="titre">
+        <h3>Formulaire de réservation</h3>
+        
+        <p><h6>Nous proposons une sélection de chambres confortables et adaptées à tous les budgets.
+            Choisissez ce qui vous convient.
+        </h6></p>
+       
+        <hr>
+        <form action="/enregistrer?chambre_id={{ chambre_id }}" method="POST">
+            <div class="input-group">
+                <label for="depart">Date de départ:</label>
+                <input type="date" id="depart" name="depart" required>
+            </div>
+            <div class="input-group">
+                <label for="arrivee">Date d'arrivée:</label>
+                <input type="date" id="arrivee" name="arrivee" required>
+            </div>
+            <div class="input-group">
+                <label for="budget">Budget :</label>
+                <select id="budget" name="budget">
+                    <option value="0-50">Moins de 50€</option>
+                    <option value="50-100">Entre 50€ et 100€</option>
+                    <option value="100-200">Entre 100€ et 200€</option>
+                    <option value="200+">Plus de 200€</option>
+                </select>
+            </div>
+            <input type="submit" value="Enregistrer">
+        </form>
+    </div>
+</body>
+
+</html>

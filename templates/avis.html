@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Avis </title>
+  <meta charset="utf-8 " />
+  <link rel="stylesheet" type="text/css" href="../static/style4.css">
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+
+  <nav>
+    <img src="" class="logo" alt="">
+    <ul>
+      <li class="active">
+      <li><a href="/accueil">Acceuil</a> </li>
+      <li><a href="#Calendrier">Calendrier</a> </li>
+      <li><a href="/commentaires">Avis</a> </li><!--afficher les avis-->
+      <li><a href="/avis">add Avis</a> </li><!--ajouter avis-->
+      <li><a href="/reservation">LIste</a> </li><!--ajouter avis-->
+      <li><a href="/chambres">Chambres </a> </li>
+      <li><a href="/deconnexion">Déconnecter </a> </li>
+
+
+    </ul>
+  </nav>
+  <form method="POST" action="/ajouter_avis">
+    <h3> Avis </h3>
+    <input type="text" name="avis" placeholder="saisissez votre avis">
+    <input type="submit" name="valider" placeholder="valider" class="btn">
+  </form>
+</body>
+
+</html>

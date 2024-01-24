@@ -1,0 +1,32 @@
+li {
+    list-style :none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+ a {
+    color: #818181;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s ease;
+}
+.titre {
+    position : absolute;
+    top : 50%;
+    left :50%;
+    transform : translate(-50%, -50%);
+.titre p{
+    font-size: 50px;
+    font-weight: bold;
+}
+    
+ .titre h1{
+    font-size: 120px;
+    line-height: 120px;
+    margin-left: -10px;
+
+ }
+.titre h3{
+    font-size: 40px;
+    line-height: 500px;
+}

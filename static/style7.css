@@ -1,0 +1,58 @@
+.chambre .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.chambre .heading .box-container .box {
+
+    padding: 3rem 2rem;
+    background: white;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box--shadow);
+}
+
+.chambre .heading .box-container .box:hover {
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.chambre .heading .box-container .box .img {
+    margin: 1rem 0;
+    height: 10rem;
+}
+
+.chambre .heading .box-container .box h3 {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+.chambre .heading .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.box-btn {
+    position: absolute;
+    padding: 15px 40px;
+    font-weight: bold;
+    color: rgb(138, 137, 137);
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn a {
+    transition: 00.6s ease;
+}
+
+img {
+    width: 200px;
+    /* Spécifiez la largeur souhaitée */
+    /* Permet de maintenir le rapport hauteur/largeur de l'image */
+}

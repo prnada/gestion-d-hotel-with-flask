@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Avis</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="../static/style8.css">
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+
+  <style>
+    
+    .container table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .container th,
+    .container td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+
+    .container th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <img src="" class="logo" alt="">
+    <ul>
+      <li class="active">
+        <a href="/accueil">Acceuil</a>
+      </li>
+      <li>
+        <a href="#Calendrier">Calendrier</a>
+      </li>
+      <li>
+        <a href="/commentaires">Avis</a>
+      </li><!--afficher les avis-->
+      <li>
+        <a href="/avis">add Avis</a>
+      </li><!--ajouter avis-->
+      <li>
+        <a href="/reservation">LIste</a>
+      </li><!--ajouter avis-->
+      <li>
+        <a href="/chambres">Chambres</a>
+      </li>
+      <li>
+        <a href="/deconnexion">Déconnecter</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Liste des réservations</h1>
+    {%  if message %}
+    <p class="text-success">{{ message }}</p>
+    {% endif %}
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Date de départ</th>
+          <th>Date d'arrivée</th>
+          <th>Type de chambre</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for reservation in reservations %}
+        <tr>
+          <td>{{ reservation[2] }}</td>
+          <td>{{ reservation[1] }}</td>
+          <td>{{ reservation[0] }}</td>
+          <td>{{ reservation[3] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

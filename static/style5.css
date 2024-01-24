@@ -1,0 +1,33 @@
+
+
+body {background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./image/building-gecf9a2a8e_1280.jpg);
+    height : 100vh;
+    background-size: cover ;
+    background-position: center;}
+
+
+
+header{
+    color:#ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+form input[type="valider"]{
+    background: solid;
+    border: 2px solid white;
+    display: inline-block;
+    margin: 20px auto;
+    text-align:center;
+    padding: 14px 40px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    transition : 0.24s;
+    border-radius: 24px;
+    border-color: white;
+    font-size: 20px;
+}
+form input[type="valider"]:hover{
+    background: black;}
+
+
